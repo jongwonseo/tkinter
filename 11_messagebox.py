@@ -36,7 +36,6 @@ def yesnocancel():
   else:
     print("cancel")
 
-    
 Button(root, command=info, text='infofo').pack()
 Button(root, command=warn, text='warnrn').pack()
 Button(root, command=error, text='error').pack()
@@ -45,6 +44,5 @@ Button(root, command=okcancel, text='확인 취소').pack()
 Button(root, command=retrycancel, text='재시도 취소').pack()
 Button(root, command=yesno, text='예 아니요').pack()
 Button(root, command=yesnocancel, text='예 아니요 취소').pack()
-
 
 root.mainloop()
