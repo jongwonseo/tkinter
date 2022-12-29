@@ -13,7 +13,9 @@ chkbox = Checkbutton(root, text="오늘 하루 보지 않기", variable=chkvar)
 chkbox.pack()
 
 chkvar2 = IntVar()
-chkbox2 = Checkbutton(root, text="일주일동안 보지 않기", value = 222, variable=chkvar2)
+
+#checkbox는 value라는 옵션이 없음
+chkbox2 = Checkbutton(root, text="일주일동안 보지 않기", variable=chkvar2)
 chkbox2.pack()
 
 def btncmd():
