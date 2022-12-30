@@ -10,11 +10,10 @@ filename = "mynote.txt"
 
 
 def open_file():
-  print('aaaa '+os.path)
-  
   if os.path.isfile(filename): # 파일 있으면 T
     with open(filename, 'r', encoding='utf8') as file:
-      txt.insert(END, file.read())
+      txt.delete('1.0', END) # 본문 삭제
+      txt.insert(END, file.read()) #본문 입력
 
 def save_file():
   with open(filename, 'w', encoding='utf8') as file:
